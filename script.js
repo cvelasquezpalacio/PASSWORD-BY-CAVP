@@ -1,3 +1,4 @@
+
 function generar() {
   let longitud = document.getElementById("longitud").value;
   let caracteres = "";
@@ -108,3 +109,4 @@ function copiar() {
       }, 2000);
     });
 }
+
