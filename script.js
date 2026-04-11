@@ -71,3 +71,28 @@ function generar() {
     nivelTexto.innerText = "🟢 Fuerte";
   }
 }
+
+function copiar() {
+  let texto = document.getElementById("resultado").innerText;
+
+  if (!texto) {
+    alert("No hay contraseña para copiar");
+    return;
+  }
+
+  navigator.clipboard.writeText(texto)
+    .then(() => {
+      alert("✅ Contraseña copiada");
+    })
+    .catch(() => {
+      // fallback (muy importante)
+      let textarea = document.createElement("textarea");
+      textarea.value = texto;
+      document.body.appendChild(textarea);
+      textarea.select();
+      document.execCommand("copy");
+      document.body.removeChild(textarea);
+
+      alert("⚠️ Copiado con método alternativo");
+    });
+}
