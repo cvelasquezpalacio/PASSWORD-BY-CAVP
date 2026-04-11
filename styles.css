@@ -1,0 +1,107 @@
+body {
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  font-family: Arial, sans-serif;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.box {
+  background: #111827;
+  padding: 25px;
+  width: 320px;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+}
+
+h2 {
+  margin-bottom: 10px;
+}
+
+input[type="number"] {
+  width: 60px;
+  padding: 5px;
+  margin-top: 5px;
+  border-radius: 5px;
+  border: none;
+}
+
+label {
+  display: block;
+  margin-top: 5px;
+}
+
+button {
+  background: #22c55e;
+  border: none;
+  padding: 12px;
+  margin-top: 10px;
+  width: 100%;
+  cursor: pointer;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #16a34a;
+}
+
+#resultado {
+  margin-top: 15px;
+  font-size: 18px;
+  background: #020617;
+  padding: 10px;
+  border-radius: 8px;
+  word-break: break-all;
+}
+
+#resultado {
+  transition: 0.3s;
+}
+
+#resultado:hover {
+  transform: scale(1.05);
+}
+
+#nivel {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+#barra {
+  width: 100%;
+  height: 10px;
+  background: #1e293b;
+  border-radius: 5px;
+  margin-top: 10px;
+  overflow: hidden;
+}
+
+#fuerza {
+  height: 100%;
+  width: 0%;
+  background: red;
+  transition: 0.3s;
+}
+
+#btnCopiar {
+  background: #3b82f6;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#btnCopiar:hover {
+  background: #2563eb;
+}
+
+.copiado {
+  background: #22c55e !important;
+}

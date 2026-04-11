@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>password by CAVP</title>
+
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+
+<div class="box">
+  <h2>🔐 SecurePass by CAVP </h2>
+<p>Genera contraseñas seguras</p>
+
+  <label>Longitud:</label><br>
+  <input type="number" id="longitud" value="12" min="4" max="32"><br><br>
+
+  <label><input type="checkbox" id="mayus" checked> Mayúsculas</label><br>
+  <label><input type="checkbox" id="minus" checked> Minúsculas</label><br>
+  <label><input type="checkbox" id="numeros" checked> Números</label><br>
+  <label><input type="checkbox" id="simbolos" checked> Símbolos</label><br><br>
+
+  <button onclick="generar()">Generar contraseña</button>
+  <button id="btnCopiar" onclick="copiar()">📋 Copiar</button>
+
+  <div id="resultado">Tu contraseña aparecerá aquí</div>
+
+  <div id="barra">
+  <div id="fuerza"></div>
+
+<p id="nivel"></p>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
