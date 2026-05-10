@@ -8,7 +8,7 @@
   "orientation": "portrait",
   "icons": [
     {
-      "src": "icono.png",
+      "src": "cavp-icon.png",
       "sizes": "512x512",
       "type": "image/png"
     }
