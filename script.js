@@ -1,4 +1,6 @@
 
+console.log("JS funcionando correctamente");
+
 function generar() {
   let longitud = document.getElementById("longitud").value;
   let caracteres = "";
