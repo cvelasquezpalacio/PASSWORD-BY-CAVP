@@ -119,3 +119,15 @@ function copiar() {
     }  
 }
 
+window.addEventListener("load", () => {
+  setTimeout(() => {
+    let splash = document.getElementById("splash");
+
+    splash.style.opacity = "0";
+
+    setTimeout(() => {
+      splash.style.display = "none";
+    }, 1000);
+
+  }, 2500);
+});
