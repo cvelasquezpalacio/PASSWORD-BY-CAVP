@@ -5,14 +5,16 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  min-height: 100vh;
+  padding: 20px;
   margin: 0;
 }
 
 .box {
   background: #111827;
   padding: 25px;
-  width: 320px;
+  width: 90%;
+  max-width: 320px;
   border-radius: 15px;
   box-shadow: 0 10px 25px rgba(0,0,0,0.5);
 }
@@ -37,7 +39,8 @@ label {
 button {
   background: #22c55e;
   border: none;
-  padding: 12px;
+  padding: 14px;
+  font-size: 16px;
   margin-top: 10px;
   width: 100%;
   cursor: pointer;
